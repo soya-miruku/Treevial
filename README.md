@@ -95,17 +95,17 @@ type User = inferFull<typeof schemas.defined.user>;
 
 // initialise the client (still need to work on creating a proper connection)
 schemas.initialize();
-	const adapter = AdapterFactory.Create({
-		type: 'surreal',
-		auth: {
-			username: 'root',
-			password: 'root',
-			port: 8000,
-			host: '127.0.0.1',
-			database: 'ttest',
-			namespace: 'ttest',
-		},
-	});
+const adapter = AdapterFactory.Create({
+  type: 'surreal',
+  auth: {
+    username: 'root',
+    password: 'root',
+    port: 8000,
+    host: '127.0.0.1',
+    database: 'ttest',
+    namespace: 'ttest',
+  },
+});
 
 const client = await adapter.Connect({ ...schemas.defined }); //creates the client with all the schemas
 
