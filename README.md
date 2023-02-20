@@ -62,31 +62,31 @@ const schemas = Treevial.MultiDef(({ number, string, date, array, record, relati
   User: {
     id: string(), //ideally we should have an id type
     name: string(),
-		email: string({ required: true, index: 'idx_user_email' }),
+    email: string({ required: true, index: 'idx_user_email' }),
     password: string(),
-		createdOn: date({ required: false, default: () => new Date() }),
+    createdOn: date({ required: false, default: () => new Date() }),
     updatedAt: date(),
-		posts: array(record(() => schemas.defs.post)),
+    posts: array(record(() => schemas.defs.post)),
     following: relation({
-			edge: object({
-				createdAt: date({ default: () => new Date() }),
-				how: enums(['post', 'search'], { required: true }),
-			}),
-			out: object(() => schemas.defs.user),
-			name: 'follows',
-			inverse: false,
-		}),
-		followers: relation({
-			edge: object({ createdAt: date({ default: () => new Date() }), how: enums(['post', 'search']) }),
-			out: object(() => schemas.defs.user),
-			name: 'follows',
-			inverse: true,
-		}),
+      edge: object({
+        createdAt: date({ default: () => new Date() }),
+        how: enums(['post', 'search'], { required: true }),
+      }),
+      out: object(() => schemas.defs.user),
+      name: 'follows',
+      inverse: false,
+    }),
+    followers: relation({
+      edge: object({ createdAt: date({ default: () => new Date() }), how: enums(['post', 'search']) }),
+      out: object(() => schemas.defs.user),
+      name: 'follows',
+      inverse: true,
+    }),
   },
   Post: {
-		id: string({ required: true }),
-		createdOn: date({ required: false }),
-		content: string({ required: false }),
+    id: string({ required: true }),
+    createdOn: date({ required: false }),
+    content: string({ required: false }),
   },
 });
 
