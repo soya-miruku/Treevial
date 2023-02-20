@@ -10,7 +10,7 @@
 <h4 align="center">ORM for <a href="https://surrealdb.com/" target="_blank">SurrealDB</a>.</h4>
 
 > **Note**
-><h4>NOTE: UPDATE/UPDATE feature has not yet been implemented, i am now working on LUCID which will provide more rich features, however since the API would be different, i am pushing the code here, incase anyone would like to use/expand upon it.</h4>
+><h4>NOTE: UPDATE/UPDATE feature has not yet been implemented, i am now working on LUCID which will provide more rich features, however since the API would be different, i am pushing this code here, incase anyone would like to use/expand upon it.</h4>
 <br>
 <p align="center">
   <a href="#key-features">Key Features</a> •
