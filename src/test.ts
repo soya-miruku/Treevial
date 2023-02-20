@@ -87,6 +87,7 @@ async function main() {
 			},
 			where: {
 				age: { gt: 10 },
+				emails: { contains: 'gmail' },
 				AND: [
 					{
 						name: { contains: 'lever' },
