@@ -10,7 +10,7 @@
 <h4 align="center">ORM for <a href="https://surrealdb.com/" target="_blank">SurrealDB</a>.</h4>
 
 > **Note**
-><h4>NOTE: UPDATE/UPDATE feature has not yet been implemented, i am now working on LUCID which will provide more rich features, however since the API would be different, i am pushing this code here, incase anyone would like to use/expand upon it.</h4>
+><h4>NOTE: UPDATE/UPDATE MANY feature has not yet been implemented, i am now working on LUCID which will provide more rich features, however since the API would be different, i am pushing this code here, incase anyone would like to use/expand upon it.</h4>
 
 >check out Lucid [here](https://github.com/itsezc/lucid) 
 
@@ -35,7 +35,7 @@
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/)
+To clone and run this application, you'll need [Git](https://git-scm.com)
 
 ```bash
 # Clone this repository
