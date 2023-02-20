@@ -11,6 +11,9 @@
 
 > **Note**
 ><h4>NOTE: UPDATE/UPDATE feature has not yet been implemented, i am now working on LUCID which will provide more rich features, however since the API would be different, i am pushing this code here, incase anyone would like to use/expand upon it.</h4>
+
+>check out Lucid [here](https://github.com/itsezc/lucid) 
+
 <br>
 <p align="center">
   <a href="#key-features">Key Features</a> •
@@ -32,7 +35,7 @@
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/)
 
 ```bash
 # Clone this repository
